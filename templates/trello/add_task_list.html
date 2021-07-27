@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Add Task List</title>
+    </head>
+    <body>
+        <h1>Add Task List</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            Name: <input type="text" name="name">
+            Created at: <input type="datetime-local" name="created_at">
+            <input type="submit" name="Submit" value="Add Task List">
+        </form>
+    </body>
+</html>
